@@ -5,7 +5,7 @@ module.exports = {
   hostname: '127.0.0.1',
   baseUrl: 'http://localhost:3000',
   mongodb: {
-    url: 'mongodb://localhost/junimea_dev_db'
+    url: 'mongodb://localhost/auth'
   },
   app: {
     name: 'node-auth'
