@@ -1,0 +1,18 @@
+extends base
+
+block vars
+	- var title = 'Dashboard'
+
+block body
+	h1 Dashboard
+	p.
+		Welcome to your dashboard! You are now logged in.
+
+	h2 User Information
+
+	if locals.user
+		p First Name: #{user.firstName}
+		p Last Name:  #{user.lastName}
+		p Email:      #{user.email}
+		<a href="/logout">logout</a>
+
