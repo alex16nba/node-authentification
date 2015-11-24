@@ -20,7 +20,7 @@ module.exports.login = function(req, res, next) {
 			req.session.user = user;
 
 			req.session.errorMsg = undefined;
-			res.redirect('/');
+			res.redirect('/dashboard');
 		});
 	})(req, res, next);
 };

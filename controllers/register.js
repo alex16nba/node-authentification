@@ -38,7 +38,7 @@ module.exports.register = function(req, res, next) {
       }
       req.session.user = user;
       req.session.errorMsg = undefined;
-      res.redirect('/');
+      res.redirect('/dashboard');
     });
   });
 };
